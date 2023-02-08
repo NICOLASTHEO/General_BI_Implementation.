@@ -1,0 +1,12 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="PC-DSFT039569.BI_ERROR"
+  DTS:DTSID="{C938C156-0D7B-472A-91F0-1B79DAEC3D16}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=PC-DSFT039569;Initial Catalog=BI_ERROR;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Package-{C938C156-0D7B-472A-91F0-1B79DAEC3D16}PC-DSFT039569.BI_ERROR;Auto Translate=False;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

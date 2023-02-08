@@ -1,0 +1,26 @@
+use COMERCIO_OLTP
+
+SELECT TOP (1000) [IDPRODUTO]
+      ,[PRODUTO]
+      ,[VALOR]
+      ,[CUSTO_MÉDIO]
+      ,[ID_CATEGORIA]
+      ,[ID_FORNECEDOR]
+  FROM [COMERCIO_OLTP].[dbo].[PRODUTO]
+
+  update produto set PRODUTO = 'MOTO Z PLAY 3'
+  WHERE IDPRODUTO = '58'
+  GO
+
+  INSERT INTO PRODUTO VALUES ('STAR TACK', 1000.00, 200.00, 4, 11)
+
+  USE COMERCIO_DW
+  SELECT [IDSK]
+      ,[IDPRODUTO]
+      ,[INICIO]
+      ,[FIM]
+      ,[NOME]
+      ,[VALOR_UNITARIO]
+      ,[CUSTO_MEDIO]
+      ,[ID_CATEGORIA]
+  FROM [COMERCIO_DW].[dbo].[DIM_PRODUTO]
